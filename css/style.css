@@ -511,11 +511,10 @@ html>body .contentBlock {
 }
 
 #storyBG3 {
-    background-image: url(../images/Photo//photo3.jpg);
+    background-color: darkgrey;
     z-index: -1;
     background-size: cover;
-    background-attachment: fixed;
-    height: 30%;
+    background-attachment: fixed
 }
 
 #events {
@@ -1278,4 +1277,18 @@ there.
 
 .title {
     padding-top: 30%;
+}
+
+#storyBG4 {
+    background-color: darkgrey;
+    z-index: -1;
+    background-size: cover;
+    background-attachment: fixed
+}
+
+#storyBG5 {
+    background-color: darkgrey;
+    z-index: -1;
+    background-size: cover;
+    background-attachment: fixed
 }
