@@ -45,15 +45,15 @@
             <div id="navLinks">
                 <nav class="nav-collapse">
                     <ul id="navlist">
-                        <li><a href="#storyBG1">Home</a>
+                        <li><a href="#" id="homeButton">Home</a>
                         </li>
-                        <li><a href="#storyBG2">The Project</a>
+                        <li><a href="#" id="projectButton">The Project</a>
                         </li>
-                        <li><a href=#storyBG3>Sheelas</a>
+                        <li><a href="#" id="sheelaButton">Sheelas</a>
                         </li>
-                        <li><a href="#storyBG4">Stories</a>
+                        <li><a href="#" id="storiesButton">Stories</a>
                         </li>
-                        <li><a href="#storyBG5">Contact</a>
+                        <li><a href="#" id="contactButton">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -251,11 +251,55 @@
     </script>
     <script>
         $(document).ready(function (){
-            $("#click").click(function (){
+            $("#homeButton").click(function (){
                 //$(this).animate(function(){
                     $('html, body').animate({
-                        scrollTop: $("#div1").offset().top
-                    }, 2000);
+                        scrollTop: $("#storyBG1").offset().top
+                    }, 1000);
+                //});
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function (){
+            $("#projectButton").click(function (){
+                //$(this).animate(function(){
+                    $('html, body').animate({
+                        scrollTop: $("#storyBG2").offset().top
+                    }, 1000);
+                //});
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function (){
+            $("#sheelaButton").click(function (){
+                //$(this).animate(function(){
+                    $('html, body').animate({
+                        scrollTop: $("#storyBG3").offset().top
+                    }, 1000);
+                //});
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function (){
+            $("#storiesButton").click(function (){
+                //$(this).animate(function(){
+                    $('html, body').animate({
+                        scrollTop: $("#storyBG4").offset().top
+                    }, 1000);
+                //});
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function (){
+            $("#contactButton").click(function (){
+                //$(this).animate(function(){
+                    $('html, body').animate({
+                        scrollTop: $("#storyBG5").offset().top
+                    }, 1000);
                 //});
             });
         });
