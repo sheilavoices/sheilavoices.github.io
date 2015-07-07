@@ -214,6 +214,7 @@ body {
 #navLinks {
     width: 100%;
     margin-top: 20px;
+    text-align: right;
 }
 
 .navLink {
@@ -238,6 +239,7 @@ body {
     padding-right: 20px;
     font-weight: 700;
     text-transform: uppercase;
+    font-size: 18px;    
     
 }
 
@@ -1297,4 +1299,9 @@ there.
 
 #down {
     padding-top: 10%;
+}
+
+.btn-sheela {
+    color: white;
+    background-color: black;
 }
