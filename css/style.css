@@ -26,7 +26,7 @@ body {
 .nav {
 	width: 100%;
 	height: 60px;
-	background-color: rgba(0, 0, 0, .75);
+	background-color: rgba(0, 0, 0, .50);
 	border-bottom: 0px solid rgba(0, 0, 0, 0.1);
 	position: fixed;
 	z-index: 999;
@@ -81,13 +81,11 @@ body {
 
 #navToggle {
 	margin-left: 30px;
+	display: none;
 }
 
 /* Base Divs
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-#navToggle {
-		display:none;
-	}
 
 html>body .contentBlock {
 	height: auto;
@@ -103,9 +101,24 @@ html>body .contentBlock {
 	background-color: #eeeeee;
 	padding-top: 5%;
 	height: 110%;
-	min-height: 100%;
 	background-size: cover;
 	background-attachment: fixed;
+}
+
+#project {
+	height: 85%;
+}
+
+#sheela {
+	height: 110%;
+}
+
+#stories {
+	height: 65%;
+}
+
+#contact {
+	height: 110%;
 }
 
 .minorBlock h1 {
@@ -129,11 +142,6 @@ html>body .contentBlock {
 }
 
 #main {
-	/*background-image: url(../images/main.jpg);
-    background-size: cover;
-    color: white;
-    background-attachment: fixed;*/
-	
 	position: relative;
 	overflow: hidden;
 }
@@ -225,7 +233,8 @@ html>body .contentBlock {
 	background-image: url(../images/DSC_0094.JPG);
 	z-index: -1;
 	background-size: cover;
-	background-attachment: fixed
+	background-attachment: fixed;
+	min-height: 100%;
 }
 
 #storyBG2 {
@@ -244,7 +253,6 @@ html>body .contentBlock {
 	height: 30%;
 }
 
-
 #storyBG4 {
 	background-color: darkgrey;
 	z-index: -1;
@@ -262,7 +270,7 @@ html>body .contentBlock {
 }
 
 #down {
-	margin-top:5%;
+	margin-top: 5%;
 }
 
 .btn-sheela {
@@ -282,9 +290,11 @@ a {
 a:hover {
 	color: #0FA0CE;
 }
+
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*
+
 Note: The best way to structure the use of media queries is to create the queries
 near the relevant code. For example, if you wanted to change the styles for buttons
 on small devices, paste the mobile query code up in the buttons section and style it
@@ -292,78 +302,122 @@ there.
 */
 /* Larger than mobile */
 
-@media (min-width: 400px) {
+@media (min-width: 320px) {
 	/* Larger than phablet (also point when grid becomes active) */
+
+	#nav{
+		height: 150px;
+	}
 	
 	#navToggle {
-		display: block;
+	margin-left: 20px;
+	display: block;
+		color: white;
+		float: left;
+		width: 20px;
+		height: 30px;
 	}
+	
+	
+#navLinks {
+	width: 100%;
+	margin-top: 30px;
+	text-align: right;
+}
+
+.navLink {
+	color: #999;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+#navlist a {
+	text-decoration: none;
+	color: #999;
+}
+
+#navlist a:hover {
+	text-decoration: none;
+	color: cornsilk;
+}
+
+#navlist li {
+	display: inline;
+	list-style-type: none;
+	padding-right: 10px;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 12px;
+}
 	#main h2 {
-		font-size: 2em;
+		font-size: 1.5em;
 	}
 	#main h3 {
-		font-size: 1.8em;
+		font-size: 1.3em;
 	}
 	#main {
 		margin-top: 45%
 	}
-		
 	#storyBG2 {
-			height: 15%;
+		height: 15%;
 	}
-		
 	.storyBlock h2 {
-			font-size: 2.5em;	
+		font-size: 2em;
 	}
-		
 	#storyBG3 {
-			height: 15%;
+		height: 15%;
 	}
-		
 	.storyBlock h3 {
-			font-size: 2.5em;
+		font-size: 2em;
 	}
-		
 	#storyBG4 {
-			height: 15%;
+		height: 15%;
 	}
-	
 	#storyBG5 {
-			height: 15%;
+		height: 15%;
 	}
-				
 	.minorBlock h3 {
-			font-size: 1.5em;	
-	}
-		
-	.minorBlock h4 {
-			font-size: 1.22em;	
-	}
-	
-	.minorBlock p {
 		font-size: 1em;
 	}
-	
+	.minorBlock h4 {
+		font-size: .9em;
+	}
+	.minorBlock p {
+		font-size: .75em;
+	}
+	.minorBlock hr {
+		border-top: 0.5px solid black;
+	}
 	#down {
 		margin-top: 10%;
 	}
 }
 
-@media (min-width: 550px) {
-	#navToggle {
-		display: none;
-	}
-}
-/* Smaller than tablet */
-
-@media (max-width: 750px) {}
-/* Larger than tablet */
-
-@media (min-width: 750px) {
-	#navToggle {
-		display: block;
+@media (min-width: 768px) {
+	
+	#navToggle{
+		display:none;
 	}
 	
+	.minorBlock {
+		background-color: #eeeeee;
+		padding-top: 5%;
+		height: 85%;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+	#project {
+		height: 55%;
+	}
+	#sheela {
+		height: 85%;
+	}
+	#stories {
+		height: 65%;
+	}
+	#contact {
+		height: 85%;
+	}
 	#main h2 {
 		font-size: em;
 	}
@@ -376,68 +430,60 @@ there.
 		margin-top: 25%
 	}
 	#storyBG2 {
-			height: 15%;
+		height: 15%;
 	}
-		
 	.storyBlock h2 {
-			font-size: 3em;
-			margin-top: 3%;
+		font-size: 3em;
+		margin-top: 3%;
 	}
-		
 	#storyBG3 {
-			background-color: darkgrey;
-			z-index: -1;
-			background-size: cover;
-			background-attachment: fixed;
-			height: 15%;
+		background-color: darkgrey;
+		z-index: -1;
+		background-size: cover;
+		background-attachment: fixed;
+		height: 10%;
 	}
-		
 	.storyBlock h3 {
-			font-family: 'Raleway', sans-serif;
-			text-transform: uppercase;
-			color: white;
-			opacity: 1;
-			font-weight: 200;
-			font-size: 3em;
+		font-family: 'Raleway', sans-serif;
+		text-transform: uppercase;
+		color: white;
+		opacity: 1;
+		font-weight: 200;
+		font-size: 3em;
 	}
-		
 	#storyBG4 {
-			background-color: darkgrey;
-			z-index: -1;
-			background-size: cover;
-			background-attachment: fixed;
-			height: 17%;
+		background-color: darkgrey;
+		z-index: -1;
+		background-size: cover;
+		background-attachment: fixed;
+		height: 10%;
 	}
-	
 	#storyBG5 {
-			background-color: darkgrey;
-			z-index: -1;
-			background-size: cover;
-			background-attachment: fixed;
-			height: 15%;
+		background-color: darkgrey;
+		z-index: -1;
+		background-size: cover;
+		background-attachment: fixed;
+		height: 10%;
 	}
-				
 	.minorBlock h3 {
-			font-family: 'Raleway', sans-serif;
-			text-transform: uppercase;
-			color: black;
-			opacity: 1;
-			font-weight: 400;
-			font-size: 2.5em;	
+		font-family: 'Raleway', sans-serif;
+		text-transform: uppercase;
+		color: black;
+		opacity: 1;
+		font-weight: 400;
+		font-size: 2.5em;
 	}
-		
 	.minorBlock h4 {
-			font-family: 'Raleway', sans-serif;
-			text-transform: uppercase;
-			color: black;
-			opacity: 1;
-			font-weight: 400;
-			font-size: 1.7em;	
+		font-family: 'Raleway', sans-serif;
+		text-transform: uppercase;
+		color: black;
+		opacity: 1;
+		font-weight: 400;
+		font-size: 1.7em;
 	}
 	.minorBlock p {
 		font-size: 1.2em;
 	}
-	
 	#down {
 		margin-top: 5%;
 	}
@@ -445,182 +491,160 @@ there.
 /* Larger than desktop */
 
 @media (min-width: 1000px) {
-
-	#navToggle {
-		display:none;
-	}
 	.minorBlock {
-	background-color: #eeeeee;
-	padding-top: 5%;
-	height: 90%;
-	min-height: 60%;
-	background-size: cover;
-	background-attachment: fixed;
-}
-
-.minorBlock h1 {
-	font-family: 'Raleway', sans-serif;
-	color: black;
-	opacity: 1;
-	font-weight: 100;
-	font-size: 2em;
-	padding-top: 5%;
-}
-
-.minorBlock p {
-	color: #1a1a1a;
-	font-size: 18px;
-}
-
-#main {
-	/*background-image: url(../images/main.jpg);
-    background-size: cover;
-    color: white;
-    background-attachment: fixed;*/
-	
-	position: relative;
-	overflow: hidden;
-}
-
-#main h1 {
-	font-family: 'Raleway', sans-serif;
-	text-transform: uppercase;
-	color: white;
-	opacity: 1;
-	font-weight: 300;
-	font-size: 7em;
-	margin-bottom: -10px;
-}
-
-#main h2 {
-	font-family: 'Raleway', sans-serif;
-	text-transform: uppercase;
-	color: white;
-	opacity: 1;
-	font-weight: 400;
-	font-size: 6em;
-	margin-bottom: -10px;
-}
-
-.minorBlock h3 {
-	font-family: 'Raleway', sans-serif;
-	text-transform: uppercase;
-	color: black;
-	opacity: 1;
-	font-weight: 400;
-	font-size: 3em;
-}
-
-.minorBlock h4 {
-	font-family: 'Raleway', sans-serif;
-	text-transform: uppercase;
-	color: black;
-	opacity: 1;
-	font-weight: 400;
-	font-size: 2em;
-}
-
-.minorBlock p {
-	font-family: 'Raleway', sans-serif;
-	color: black;
-	opacity: 1;
-	font-weight: 200;
-	font-size: 1.7em;
-}
-
-#main h3 {
-	font-family: 'Raleway', sans-serif;
-	text-transform: uppercase;
-	color: white;
-	opacity: 1;
-	font-weight: 400;
-	font-size: 2.5em;
-}
-
-.storyBlock h2 {
-	font-family: 'Raleway', sans-serif;
-	text-transform: uppercase;
-	color: white;
-	opacity: 1;
-	font-weight: 200;
-	font-size: 6em;
-}
-
-.storyBlock h3 {
-	font-family: 'Raleway', sans-serif;
-	text-transform: uppercase;
-	color: white;
-	opacity: 1;
-	font-weight: 200;
-	font-size: 6em;
-}
-
-#main p {
-	font-weight: 700;
-	font-size: 1.3em;
-}
-
-.center {
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#storyBG1 {
-	background-image: url(../images/DSC_0094.JPG);
-	z-index: -1;
-	background-size: cover;
-	background-attachment: fixed
-}
-
-#storyBG2 {
-	background-color: darkgrey;
-	z-index: -1;
-	background-size: cover;
-	background-attachment: fixed;
-	height: 25%;
-}
-
-#storyBG3 {
-	background-color: darkgrey;
-	z-index: -1;
-	background-size: cover;
-	background-attachment: fixed;
-	height: 20%;
-}
-
-
-#storyBG4 {
-	background-color: darkgrey;
-	z-index: -1;
-	background-size: cover;
-	background-attachment: fixed;
-	height: 20%;
-}
-
-#storyBG5 {
-	background-color: darkgrey;
-	z-index: -1;
-	background-size: cover;
-	background-attachment: fixed;
-	height: 20%;
-}
-
-#down {
-	margin-top:2.5%;
-}
-
-.btn-sheela {
-	color: white;
-	background-color: black;
-}
-
-.footer {
-	background: black;
-	height: 10%
-}
+		background-color: #eeeeee;
+		padding-top: 5%;
+		min-height: 60%;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+	.minorBlock h1 {
+		font-family: 'Raleway', sans-serif;
+		color: black;
+		opacity: 1;
+		font-weight: 100;
+		font-size: 2em;
+		padding-top: 5%;
+	}
+	.minorBlock p {
+		color: #1a1a1a;
+		font-size: 18px;
+	}
+	#project {
+		height: 110%;
+	}
+	#sheela {
+		height: 110%;
+	}
+	#stories {
+		height: 120%;
+	}
+	#contact {
+		height: 110%;
+	}
+	#main {
+		position: relative;
+		overflow: hidden;
+		margin-top: 15%;
+	}
+	#main h1 {
+		font-family: 'Raleway', sans-serif;
+		text-transform: uppercase;
+		color: white;
+		opacity: 1;
+		font-weight: 300;
+		font-size: 7em;
+	}
+	#main h2 {
+		font-family: 'Raleway', sans-serif;
+		text-transform: uppercase;
+		color: white;
+		opacity: 1;
+		font-weight: 400;
+		font-size: 6em;
+	}
+	.minorBlock h3 {
+		font-family: 'Raleway', sans-serif;
+		text-transform: uppercase;
+		color: black;
+		opacity: 1;
+		font-weight: 400;
+		font-size: 3em;
+	}
+	.minorBlock h4 {
+		font-family: 'Raleway', sans-serif;
+		text-transform: uppercase;
+		color: black;
+		opacity: 1;
+		font-weight: 400;
+		font-size: 2em;
+	}
+	.minorBlock p {
+		font-family: 'Raleway', sans-serif;
+		color: black;
+		opacity: 1;
+		font-weight: 200;
+		font-size: 1.7em;
+	}
+	#main h3 {
+		font-family: 'Raleway', sans-serif;
+		text-transform: uppercase;
+		color: white;
+		opacity: 1;
+		font-weight: 400;
+		font-size: 2.5em;
+	}
+	.storyBlock h2 {
+		font-family: 'Raleway', sans-serif;
+		text-transform: uppercase;
+		color: white;
+		opacity: 1;
+		font-weight: 200;
+		font-size: 6em;
+	}
+	.storyBlock h3 {
+		font-family: 'Raleway', sans-serif;
+		text-transform: uppercase;
+		color: white;
+		opacity: 1;
+		font-weight: 200;
+		font-size: 6em;
+	}
+	#main p {
+		font-weight: 700;
+		font-size: 1.3em;
+	}
+	.center {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#storyBG1 {
+		background-image: url(../images/DSC_0094.JPG);
+		z-index: -1;
+		background-size: cover;
+		background-attachment: fixed;
+		height: 100%;
+	}
+	#storyBG2 {
+		background-color: darkgrey;
+		z-index: -1;
+		background-size: cover;
+		background-attachment: fixed;
+		height: 30%;
+	}
+	#storyBG3 {
+		background-color: darkgrey;
+		z-index: -1;
+		background-size: cover;
+		background-attachment: fixed;
+		height: 30%;
+	}
+	#storyBG4 {
+		background-color: darkgrey;
+		z-index: -1;
+		background-size: cover;
+		background-attachment: fixed;
+		height: 30%;
+	}
+	#storyBG5 {
+		background-color: darkgrey;
+		z-index: -1;
+		background-size: cover;
+		background-attachment: fixed;
+		height: 30%;
+	}
+	#down {
+		margin-top: 2.5%;
+	}
+	.btn-sheela {
+		color: white;
+		background-color: black;
+	}
+	.footer {
+		background: black;
+		height: 10%
+	}
 }
 /* Larger than Desktop HD */
 
-@media (min-width: 1200px) {
-
-}
+@media (min-width: 1200px) {}
