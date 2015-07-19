@@ -45,15 +45,15 @@
 			<div id="navLinks">
 				<nav class="nav-collapse">
 					<ul id="navlist">
-						<li><a id="homeButton">Home</a>
+						<li><a style="cursor:pointer;" id="homeButton">Home</a>
 						</li>
-						<li><a id="projectButton">The Project</a>
+						<li><a style="cursor:pointer;" id="projectButton">The Project</a>
 						</li>
-						<li><a id="sheelaButton">Sheelas</a>
+						<li><a style="cursor:pointer;" id="sheelaButton">Sheelas</a>
 						</li>
-						<li><a id="storiesButton">Stories</a>
+						<li><a style="cursor:pointer;" id="storiesButton">Stories</a>
 						</li>
-						<li><a id="contactButton">Contact</a>
+						<li><a style="cursor:pointer;" id="contactButton">Contact</a>
 						</li>
 					</ul>
 				</nav>
@@ -76,7 +76,7 @@
 			</div>
 			<div class="row">
 				<div class="col-xs-12 col-lg-12 text-center" style="margin-top: 5%">
-					<a href="#storyBG2">
+					<a style="cursor:pointer;" id="aboutButton">
 						<button type="button" class="btn btn-lg btn-default btn-sheela">TELL ME MORE</button>
 					</a>
 				</div>
@@ -264,6 +264,17 @@
 	<script>
 		$(document).ready(function () {
 			$("#projectButton").click(function () {
+				//$(this).animate(function(){
+				$('html, body').animate({
+					scrollTop: $("#storyBG2").offset().top -50
+				}, 1000);
+				//});
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function () {
+			$("#aboutButton").click(function () {
 				//$(this).animate(function(){
 				$('html, body').animate({
 					scrollTop: $("#storyBG2").offset().top -50
