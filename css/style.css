@@ -23,7 +23,7 @@ body {
 .nav {
 	width: 100%;
 	height: 60px;
-	background-color: rgba(0, 0, 0, .50);
+	background-color: rgba(0, 0, 0, 1);
 	border-bottom: 0px solid rgba(0, 0, 0, 0.1);
 	position: fixed;
 	z-index: 999;
@@ -80,7 +80,6 @@ body {
 	margin-left: 30px;
 	display: none;
 }
-
 /* Base Divs
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -100,11 +99,11 @@ html>body .contentBlock .minorBlock {
 	height: 110%;
 	background-size: cover;
 	background-attachment: fixed;
+	padding-bottom: 5%;
 }
 
 #project {
-	height: 85%;
-	min-height: 85%;
+	height: 90%;
 }
 
 #sheela {
@@ -268,7 +267,7 @@ html>body .contentBlock .minorBlock {
 }
 
 .btn-sheela {
-	color: white;
+	color: lightgrey;
 	background-color: black;
 }
 
@@ -284,7 +283,6 @@ a {
 a:hover {
 	color: #0FA0CE;
 }
-
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*
@@ -298,51 +296,44 @@ there.
 
 @media (min-width: 320px) {
 	/* Larger than phablet (also point when grid becomes active) */
-
-	#nav{
+	
+	#nav {
 		height: 150px;
 	}
-	
 	#navToggle {
-	margin-left: 20px;
-	display: block;
+		margin-left: 20px;
+		display: block;
 		color: white;
 		float: left;
 		width: 20px;
 		height: 30px;
 	}
-	
-	
-#navLinks {
-	width: 100%;
-	margin-top: 30px;
-	text-align: right;
-}
-
-.navLink {
-	color: #999;
-	font-size: 12px;
-	text-transform: uppercase;
-}
-
-#navlist a {
-	text-decoration: none;
-	color: #999;
-}
-
-#navlist a:hover {
-	text-decoration: none;
-	color: cornsilk;
-}
-
-#navlist li {
-	display: inline;
-	list-style-type: none;
-	padding-right: 10px;
-	font-weight: 700;
-	text-transform: uppercase;
-	font-size: 12px;
-}
+	#navLinks {
+		width: 100%;
+		margin-top: 30px;
+		text-align: right;
+	}
+	.navLink {
+		color: #999;
+		font-size: 12px;
+		text-transform: uppercase;
+	}
+	#navlist a {
+		text-decoration: none;
+		color: #999;
+	}
+	#navlist a:hover {
+		text-decoration: none;
+		color: cornsilk;
+	}
+	#navlist li {
+		display: inline;
+		list-style-type: none;
+		padding-right: 10px;
+		font-weight: 700;
+		text-transform: uppercase;
+		font-size: 12px;
+	}
 	#main h2 {
 		font-size: 1.5em;
 	}
@@ -361,8 +352,7 @@ there.
 	}
 	#storyBG3 {
 		height: 90px;
-		
-}
+	}
 	.storyBlock h3 {
 		font-size: 2em;
 	}
@@ -390,14 +380,13 @@ there.
 }
 
 @media (min-width: 768px) {
-	
-	#navToggle{
-		display:none;
+	#navToggle {
+		display: none;
 	}
-	
 	.minorBlock {
 		background-color: #eeeeee;
 		padding-top: 5%;
+		padding-bottom: 5%;
 		height: 85%;
 		background-size: cover;
 		background-attachment: fixed;
@@ -494,6 +483,7 @@ there.
 	.minorBlock {
 		background-color: #eeeeee;
 		padding-top: 5%;
+		padding-top: 5%;
 		min-height: 60%;
 		background-size: cover;
 		background-attachment: fixed;
@@ -511,7 +501,7 @@ there.
 		font-size: 18px;
 	}
 	#project {
-		height: 110%;
+		height: 120%;
 	}
 	#sheela {
 		height: 110%;
@@ -637,7 +627,7 @@ there.
 		margin-top: 2.5%;
 	}
 	.btn-sheela {
-		color: white;
+		color: lightgrey;
 		background-color: black;
 	}
 	.footer {
